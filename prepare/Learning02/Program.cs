@@ -4,30 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Console.Write("What is your magic number? ");
-        //int magicNumber = int.Parse((Console.ReadLine()));
-        Random randomGenerator = new Random();
-        int magicNumber = randomGenerator.Next(1, 101);
-        int guess = -1;
+       Job job1 = new Job();
+       job1._jobTitle = "Customer Service Rep";
+       job1._company = "Amazon";
+       job1._startYear = "2016";
+       job1._endYear = "2020";
 
-        while (guess != magicNumber)
-        {
-            Console.Write("What is your guess? ");
-            guess = int.Parse(Console.ReadLine());
+       Job job2 = new Job();
+       job2._jobTitle = "Tech Support Rep Ter 1";
+       job2._company = "Asurion";
+       job2._startYear = "2008";
+       job2._endYear = "2016";
 
-            if (magicNumber > guess)
-            {
-                Console.WriteLine("Higher.");
-            }
-            else if (magicNumber < guess)
-            {
-                Console.WriteLine("Lower.");
-            }
-            else
-            {
-                Console.WriteLine("You guessed it!");
-            }
-        }
-         
+       Resume myResume = new Resume();
+       myResume._name = "Rachael Hollinger";
+       myResume._jobs.Add(job1);
+       myResume._jobs.Add(job2);
+
+       myResume.Display();
+
+
     }
 }
