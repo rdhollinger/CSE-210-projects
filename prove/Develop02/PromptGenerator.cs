@@ -6,6 +6,6 @@ public class PromptGenerator{
 
     public string GetPrompt()
     {
-        return prompts[rnd.Next(prompts.Count)];
+       return prompts[rnd.Next(prompts.Count)];
     }
 }

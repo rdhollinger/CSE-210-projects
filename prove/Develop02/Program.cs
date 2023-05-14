@@ -1,5 +1,4 @@
 using System;
-
 class Program
 {
     static void Main(string[] args)
@@ -28,6 +27,8 @@ class Program
                     break;
                 case "4":
                     journal.LoadEntries();
+                    //journal.DisplayEntry();
+                    
                     break;
                 case "5":
                     Environment.Exit(0);

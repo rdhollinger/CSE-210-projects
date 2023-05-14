@@ -20,7 +20,7 @@ public class Entry
     // METHODS
     public Entry(){}
     public Entry(string datetext, string prompt, string response){
-        this.dateText = dateText;
+        dateText = datetext;
         this.prompt = prompt;
         this.response = response;
     }
