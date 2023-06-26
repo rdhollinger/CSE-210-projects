@@ -21,7 +21,7 @@ public class CheckListGoal : CompletableGoal
         if(_timesDone == _target)
         {
             _isComplete = true;
-            Console.WriteLine($"Congratulations! You have completed the Goal and earned {_bonusPoints} bounus points.");
+            Console.WriteLine($"Congratulations! You have completed the Goal and earned {_bonusPoints} bonus points.");
             return _bonusPoints + _points;
         }
         else
