@@ -15,7 +15,7 @@ public class Video
     public void videoInfo()
     {
         Console.WriteLine($"{_title}: {_author}");
-        Console.WriteLine($"Video lenght: {_length} minutes");
+        Console.WriteLine($"Video length: {_length} minutes");
         foreach(Comment comment in comments)
         {
             comment.commentInfo();

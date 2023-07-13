@@ -8,12 +8,4 @@ public class Running : Activity
         _activityType = "Running";
     }
 
-    public override void speed()
-    {
-        _speed = (_distance / _activityLength) * 60;
-    }
-    public override void pace()
-    {
-        _pace = _activityLength / _distance;
-    }
 }

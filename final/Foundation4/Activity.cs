@@ -11,16 +11,16 @@ public abstract class Activity
     {
         Console.WriteLine($"{_date} {_activityType} ({_activityLength} min)- Distance {_distance} miles, Speed {_speed} mph, Pace {_pace} min per mile");
     }
-    public virtual void distance()
+    public virtual double distance()
     {
-
+        return _distance;
     }
-    public virtual void speed()
+    public double speed()
     {
-
+        return _speed = (_distance / _activityLength) * 60;
     }
-    public virtual void pace()
+    public double pace()
     {
-
+        return _pace = _activityLength / _distance;
     }
 }

@@ -9,17 +9,10 @@ public class Swimming:Activity
         _date = date;
         _activityType = "Swimming";
     }
-    public override void distance()
+    public override double distance()
     {
-        _distance = _laps * 50 / 1000 * 0.62;
+        return _distance = _laps * 50 / 1000 * 0.62;
     }
-    public override void pace()
-    {
-        _pace = _activityLength / _distance;
-    }
-    public override void speed()
-    {
-        _speed = (_distance / _activityLength) * 60;
-    }
+
 
 }
